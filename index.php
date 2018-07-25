@@ -205,7 +205,7 @@
 				    <a class="nav-link active" data-location1="1350" data-location2="2300"href="#">Experiences</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link active" data-location1="1800"data-location2="3100"href="#">Testimonial</a>
+				    <a class="nav-link active" data-location1="2150"data-location2="3100"href="#">Testimonial</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link active" data-location1="2500"data-location2="3600"href="#">contact</a>
