@@ -87,7 +87,7 @@
 }
     .myEducationPage{
       height: 40vh;
-      min-height: 26rem;
+      min-height: 24rem;
     }
     #quotes .overlay {
     background: #121212;
@@ -172,6 +172,27 @@
   .websiteheader{
     height:6rem;
   }
+  .myEducationPage{
+    height: 28rem;
+  }
+  .myExperiencePage{
+    height: 28rem;
+  }
+  .experience-description{
+    padding-left: 0.5rem;
+    padding-top: 10px;
+  }
+  .education-description{
+    padding-left: 0.5rem;
+    padding-top:10px;
+  }
+  .experience-thumb{
+    padding-top: 0px;
+  }
+  .education-thumb{
+    padding-top: 0px;
+  }
+
 
 } 
 
@@ -202,13 +223,13 @@
 				    <a class="nav-link active" data-location1="700" data-location2="550" href="#">About Me</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link active" data-location1="1350" data-location2="2300"href="#">Experiences</a>
+				    <a class="nav-link active" data-location1="1350" data-location2="2450"href="#">Experiences</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link active" data-location1="2150"data-location2="3100"href="#">Testimonial</a>
+				    <a class="nav-link active" data-location1="2150"data-location2="3300"href="#">Testimonial</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link active" data-location1="2500"data-location2="3600"href="#">contact</a>
+				    <a class="nav-link active" data-location1="2500"data-location2="3850"href="#">contact</a>
 				  </li>
 			</ul>
  		</div>
@@ -268,7 +289,7 @@
           </div>
           <div class="row pt-2">
             <div class="col-12">
-              <p style="color:#d0d0d0">As a new comer in Canada, I always force myself to learn stuff, which including not only work skills but also culture in Canada. I am a MBA graduate from Carleton university. To better fit the labor market and the digital trend, I start to learn web developing.From studying business to computer science, I know it is pretty hard but I am going to do it.
+              <p style="color:#d0d0d0">As a new comer in Canada, I always force myself to learn stuff, which includes not only work skills but also culture in Canada. I am a MBA graduate from Carleton university. To better fit the labor market and the digital trend, I start to learn web developing.From studying business to computer science, I know it is pretty hard but I am going to do it.
               After the study, I am very confident to show my ability as what you can see from this website. I am ready to make contribution! 
               </p>
             </div>
@@ -407,8 +428,8 @@
                     <div class="background-image experience-img"></div>
                </div>
 
-               <div class="pl-5 col-md-6 col-sm-12"style="background-color: #e9724c">
-                    <div class="color-white experience-thumb pt-5">
+               <div class="experience-description pl-5 col-md-6 pt-4 col-sm-12"style="background-color: #e9724c">
+                    <div class="color-white experience-thumb ">
                          <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
                               <h1>My Experiences</h1>
                               <p class="color-white ">Previous companies and my tasks</p>
@@ -448,8 +469,8 @@
      <div class="container-fluid p-0 m-0 myEducationPage">
           <div class="row p-0 m-0 w-100 h-100">
 
-               <div class="col-md-6 col-sm-12 w-100 h-100"style="background-color: #e3ae57">
-                    <div class="color-white education-thumb pt-5 pl-5">
+               <div class="col-md-6 col-sm-12 w-100 h-100 pl-5 pt-4 education-description"style="background-color: #e3ae57">
+                    <div class="color-white education-thumb  ">
                          <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
                               <h1>My Education</h1>
                               <p class="color-white">My education background</p>
