@@ -9,22 +9,28 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
 
     <title>Nero personal website</title>
   </head>
   <style type="text/css">
   	.websiteheader{
-  		height: 5rem;
+  		height: auto;
   		background-color: #fff;
       position: fixed;
       z-index: 99;
   	}
-    .title{
+/*    .title{
       font-size: 1.4rem;
-    }
-    .topNav{
+    }*/
+ /*   .topNav{
       font-size: 0.8rem;
-    }
+    }*/
     .homePageImg{
       background-image: url("./images/bg-homepage.jpg");
       background-size: cover;
@@ -137,6 +143,8 @@
   font-size: 2.3rem;
 }
 
+
+
 @media screen and (max-width: 620px){
   .skillpage{
     height: auto;
@@ -162,6 +170,7 @@
   }
   .homepage{
     height: auto;
+    top:5rem;
   }
   .aboutMe{
     height: auto;
@@ -169,8 +178,11 @@
   .btn-homePage{
     display:none;
   }
+  .btn-resume{
+    display:none;
+  }
   .websiteheader{
-    height:6rem;
+    height:auto;
   }
   .myEducationPage{
     height: 28rem;
@@ -192,7 +204,12 @@
   .education-thumb{
     padding-top: 0px;
   }
-
+  .btn-homePage:hover{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+  }
+  .btn-resume:hover{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+  }
 
 } 
 
@@ -201,9 +218,17 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script> -->
+    <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
 
 
 
@@ -211,8 +236,8 @@
 <!-- websitetoptitle -->
 <div class="container-fluid websiteheader p-0">
  	<div class="row p-0 m-0">
- 		<div class="col-12 title">
- 			<p class="text-center m-0">Nero Website</p>
+ 		<div class="col-12 p-0 m-0 title">
+ 			<!-- <p class="text-center m-0 ">Nero Website</p>
  	<div class="row text-center ">
  		<div class="col-12">
  			<ul class="nav display-5 topNav justify-content-center">
@@ -223,19 +248,67 @@
 				    <a class="nav-link active" data-location1="700" data-location2="550" href="#">About Me</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link active" data-location1="1350" data-location2="2450"href="#">Experiences</a>
+				    <a class="nav-link active" data-location1="1350" data-location2="2350"href="#">Experiences</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link active" data-location1="2150"data-location2="3300"href="#">Testimonial</a>
+				    <a class="nav-link active" data-location1="2150"data-location2="3250"href="#">Testimonial</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link active" data-location1="2500"data-location2="3850"href="#">contact</a>
+				    <a class="nav-link active" data-location1="2500"data-location2="3650"href="#">contact</a>
 				  </li>
 			</ul>
  		</div>
- 	</div>
- 		</div>
- 	</div>
+ 	</div> -->
+
+      <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand"style="color: brown" href="#">Nero website</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-location1="700" data-location2="550" href="#">About me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-location1="1350" data-location2="2350" href="#">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-location1="2150"data-location2="3250" href="#">Testimonial</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-location1="2500"data-location2="3650" href="#">Contacts</a>
+            </li>
+
+            
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">           
+              <button class="btn btn-outline-success my-2 my-sm-0 btn-resume1">download resume</button>
+        </form>
+        <!-- Links -->
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+</div>
+</div>
 </div>
 
 <div class="container-fluid homePage">
@@ -243,25 +316,31 @@
     <div class="col-md-6 col-sm-12 homePageImg">
     </div>
     <div class="col-md-6 col-sm-12 homePageRight justify-content-center align-items-center h-100">
-      <div class="container align-items-center justify-content-center w-100" style="padding-top: 10rem;">
+      <div class="container align-items-center justify-content-center w-100" style="padding-top: 5rem;">
         <div class="row pt-5">
         <div class="col-12">
-          <p>Welcome to My Website</p>
+          <p class="animated fadeInUp">Welcome to My Website</p>
         </div>
       </div>
         <div class="row pt-5">
           <div class="col-12">
-            <p class="text-black-50"style="font-size: 2rem; color: #d4d2d1">Hello, I am <span style="color: black;">Nero Wei</span> currently based in Ottawa city</p>
+            <p class="text-black-50 animated fadeInUp"style="font-size: 2rem; color: #d4d2d1;line-height: 3rem; animation-delay:0.5s;">Hello, I am <span style="color: black;">Nero Wei</span> currently based in Ottawa city</p>
           </div>
         </div>
           <div class="row pt-3">
             <div class="col-12">
-              <p class="text-black-50" style="font-size: 1.2rem;">I am a web developer with a MBA degree. Technology is valuable only when they create business value and I am here to make technology valvulable to you.</p>
+              <p class="text-black-50 animated fadeInUp" style="font-size: 1.2rem; animation-delay: 0.8s">I am a web developer with a MBA degree. Technology is valuable only when they create business value and I am here to make technology valvulable to you.</p>
             </div>
           </div>
           <div class="row">
             <div class="pl-3 pt-5">
-             <button type="button " class="btn btn-outline-dark px-5 btn-homePage"style="border-radius: 1rem;">Get Started</button>        
+             <button type="button " class="btn btn-outline-dark px-5 btn-homePage animated fadeInUp"style="border-radius: 1rem;">Get Started</button>        
+            </div>
+            <!-- <div class="pl-3 pt-5">
+             <button type="button " class="btn btn-outline-dark px-5 btn-wordpress animated fadeInUp"style="border-radius: 1rem;">wordpress demo</button>        
+            </div> -->
+            <div class="pl-3 pt-5">
+             <button type="button " class="btn btn-outline-dark px-5 btn-resume animated fadeInUp"style="border-radius: 1rem;">Download resume</button>        
             </div>
 
           </div>
@@ -273,10 +352,10 @@
   </div>
 </div>
 
-<div class="container-fluid aboutMe">
+<div class="container-fluid aboutMe ">
   <div class="row h-100">
     <div class="col-md-6 col-sm-12 h-100">
-        <div class="container">
+        <div class="container animated fadeInUp">
           <div class="row pt-5">
             <div class="col-12">
               <p style="color:#e3ae58;font-size: 1.3rem">About Me</p>
@@ -299,17 +378,17 @@
     <div class="col-md-6 col-sm-12 p-0 h-100">
       <div class="container-fluid w-100 h-100 m-0 p-0">
         <div class="row w-100 h-100 p-0 m-0">
-          <div class="col-6 col-sm-12 h-100"style="background-image: url('./images/s2.jpg');background-size: cover;background-repeat: no-repeat;">
+          <div class="col-md-6 col-sm-12 h-100"style="background-image: url('./images/s2.jpg');background-size: cover;background-repeat: no-repeat;">
             
           </div>
           <div class="col-md-6 col-sm-12 px-5 pt-5"style="background-color: #e3ae57;">
             <div class="skill-thumb">
-                         <div class="wow fadeInUp section-title text-white" data-wow-delay="1.2s">
+                         <div class="animated fadeInUp section-title text-white" webkit-animation-delay="1.2s">
                               <h1 class="pt-1">My skills</h1>
                               <p class="color-white">HTML . CSS . Bootstrap . JS . JQuery. AJAX . PHP . twig . MySql . Wordpress</p>
                          </div>
 
-                         <div class=" wow fadeInUp skills-thumb text-white" data-wow-delay="1.6s">
+                         <div class=" animated fadeInUp skills-thumb text-white" webkit-animation-delay="1.6s">
                          <strong>Frontend Design</strong>
                               <span class="text-white pull-right">90%</span>
                                    <div class="progress">
@@ -340,9 +419,9 @@
 
 
 <div class="container-fluid justify-content-center mx-0 px-0 skillPage"style=" color:white">
-  <div class="row h-100 w-100 p-0 m-0">
+  <div class="row h-100 w-100 p-0 m-0 ">
     <div class="col-md-3 col-sm-12 p-0  w-100"style="background-color: #e3ae57;">
-      <div class="container">
+      <div class="container animated fadeInUp">
         <div class="row text-center pt-5">
           <div class="col-12">
             <i class="material-icons"style="font-size: 4rem;">computer</i>
@@ -361,7 +440,7 @@
       </div>
     </div>
     <div class="col-md-3 col-sm-12 p-0 w-100"style="background-color: #e9724c;">
-      <div class="container">
+      <div class="container animated fadeInUp">
         <div class="row text-center pt-5">
           <div class="col-12">
             <i class="material-icons"style="font-size: 4rem;">book</i>
@@ -380,7 +459,7 @@
       </div>
     </div>
     <div class="col-md-3 col-sm-12 p-0 h-100"style="background-color: #161616;">
-      <div class="container">
+      <div class="container animated fadeInUp">
         <div class="row text-center pt-5">
           <div class="col-12">
             <i class="material-icons"style="font-size: 4rem;">group</i>
@@ -399,7 +478,7 @@
       </div>
     </div>
     <div class="col-md-3 col-sm-12 p-0 h-100"style="background-color: #fff;color:#aaa;">
-      <div class="container">
+      <div class="container animated fadeInUp">
         <div class="row text-center pt-5">
           <div class="col-12">
             <i class="material-icons"style="font-size: 4rem;">thumb_up_alt</i>
@@ -421,21 +500,21 @@
 </div>
 
 <section id="experience" class="parallax-section">
-     <div class="container-fluid myExperiencePage m-0 p-0">
+     <div class="container-fluid myExperiencePage m-0 p-0 ">
           <div class="row w-100 p-0 m-0 h-100">
 
-               <div class="col-md-6  col-sm-12 h-100 bg-experience"style="background-image:url('./images/experience-img.jpg');background-size: cover;background-position: center;">
+               <div class="col-md-6  col-sm-12 h-100 bg-experience "style="background-image:url('./images/experience-img.jpg');background-size: cover;background-position: center;">
                     <div class="background-image experience-img"></div>
                </div>
 
                <div class="experience-description pl-5 col-md-6 pt-4 col-sm-12"style="background-color: #e9724c">
                     <div class="color-white experience-thumb ">
-                         <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                         <div class="animated fadeInUp section-title" webkit-animation-delay="0.8s">
                               <h1>My Experiences</h1>
                               <p class="color-white ">Previous companies and my tasks</p>
                          </div>
 
-                         <div class="wow fadeInUp color-white media pt-3" data-wow-delay="1.2s">
+                         <div class="animated fadeInUp color-white media pt-3" webkit-animation-delay="1.2s">
                               <div class="media-object media-left">
                                    <i class="material-icons pr-2"style="font-size: 2.3rem;">computer</i>
                               </div>
@@ -445,7 +524,7 @@
                               </div>
                          </div>
 
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                         <div class="animated fadeInUp color-white media" webkit-animation-delay="1.6s">
                               <div class="media-object media-left">
                                    <i class="material-icons pr-2"style="font-size: 2.3rem;">computer</i>
                               </div>
@@ -471,12 +550,12 @@
 
                <div class="col-md-6 col-sm-12 w-100 h-100 pl-5 pt-4 education-description"style="background-color: #e3ae57">
                     <div class="color-white education-thumb  ">
-                         <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                         <div class="animated fadeInUp section-title" webkit-animation-delay="0.8s">
                               <h1>My Education</h1>
                               <p class="color-white">My education background</p>
                          </div>
 
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                         <div class="animated fadeInUp color-white media" webkit-animation-delay="1.2s">
                               <div class="media-object media-left">
                                    <i class="material-icons pr-2"style="font-size: 2.3rem;">computer</i>
                               </div>
@@ -486,7 +565,7 @@
                               </div>
                          </div>
 
-                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                         <div class="animated fadeInUp color-white media" animation-delay="1.6s">
                               <div class="media-object media-left">
                                    <i class="material-icons pr-2"style="font-size: 2.3rem;">computer</i>
                               </div>
@@ -519,8 +598,8 @@
                     <i class="material-icons"style="font-size: 2.3rem;">
                     star
                     </i>
-                    <h2 class="wow fadeInUp text-center" data-wow-delay="0.8s">Keep studying, discovering is what makes a developer better</h2>
-                    <p class="wow fadeInUp text-center pt-5" data-wow-delay="1s">Yes, I want a job. But I also want to earn your trust and I want a place to develop myself.</p>
+                    <h2 class="animated fadeInUp text-center" webkit-animation-delay="0.8s">Keep studying, discovering is what makes a developer better</h2>
+                    <p class="animated fadeInUp text-center pt-5" webkit-animation-delay="1s">Yes, I want a job. But I also want to earn your trust and I want a place to develop myself.</p>
                </div>
 
           </div>
@@ -536,23 +615,23 @@
 
                <div class="col-md-6 col-sm-12 p-0 m-0"style="background-color: #e9724c">
                     <div class="contact-form">
-                         <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                         <div class="wow fadeInUp section-title" webkit-animation-delay="0.2s">
                               <h1 class="color-white">Say hello..</h1>
                               <p class="color-white">Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</p>
                          </div>
 
                          <div id="contact-form">
                               <form action="#template-mo" method="post">
-                                   <div class="wow fadeInUp" data-wow-delay="1s">
+                                   <div class="wow fadeInUp" webkit-animation-delay="1s">
                                         <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name">
                                    </div>
-                                   <div class="wow fadeInUp" data-wow-delay="1.2s">
+                                   <div class="wow fadeInUp" webkit-animation-delay="1.2s">
                                         <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
                                    </div>
-                                   <div class="wow fadeInUp" data-wow-delay="1.4s">
+                                   <div class="wow fadeInUp" webkit-animation-delay="1.4s">
                                         <textarea name="message" rows="5" class="form-control" id="message" placeholder="Write your message..."></textarea>
                                    </div>
-                                   <div class="wow fadeInUp col-md-6 col-sm-8" data-wow-delay="1.6s">
+                                   <div class="wow fadeInUp col-md-6 col-sm-8" webkit-animation-delay="1.6s">
                                         <button type="button" style="border-radius: 2rem;" class="btn btn-outline-dark px-5">Send</button>
                                    </div>
                               </form>
@@ -567,12 +646,12 @@
 
                <div class="bg-dark col-md-3 col-sm-6">
                     <div class="contact-thumb">
-                         <div class="wow fadeInUp contact-info" data-wow-delay="0.6s">
+                         <div class="wow fadeInUp contact-info" webkit-animation-delay="0.6s">
                               <h3 class="color-white pt-5">Mail Me</h3>
                               <p>1109-1241 kilborn ave K1H1A5</p>
                          </div>
 
-                         <div class="wow fadeInUp contact-info" data-wow-delay="0.8s">
+                         <div class="wow fadeInUp contact-info" webkit-animation-delay="0.8s">
                               <h3 class="color-white pt-5">Contact.</h3>
                               <p><i class="fa fa-phone"></i> 819-328-4081</p>
                               <p><i class="fa fa-envelope-o"></i> <a href="mailto:wrh1102@gmail.com">wrh1102@gmail.com</a></p>
@@ -596,7 +675,7 @@
     <div class="row">
 
                <div class="col-md-12 col-sm-12 pt-1">
-                    <div class="wow fadeInUp footer-copyright text-center" data-wow-delay="1.8s">
+                    <div class="wow fadeInUp footer-copyright text-center" webkit-animation-delay="1.8s">
                          <p>Copyright &copy; 2018 Nero Wei</p>
                     </div>
                </div>
@@ -632,6 +711,24 @@
 
     
   })
+
+  // $(".btn-wordpress").click(function(){
+  //   window.open("../wordpress");
+
+
+  // })
+  $(".btn-resume").click(function(){
+    window.open("./Resume.docx");
+
+
+  })
+  $(".btn-resume1").click(function(){
+    window.open("./Resume.docx");
+
+
+  })
+  
+
 
 
 
