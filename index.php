@@ -181,6 +181,9 @@
   .btn-resume{
     display:none;
   }
+  .btn-github{
+    display:none;
+  }
   .websiteheader{
     height:auto;
   }
@@ -286,10 +289,10 @@
                 <a class="nav-link" data-location1="700" data-location2="550" href="#">About me</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-location1="1350" data-location2="2350" href="#">Experience</a>
+                <a class="nav-link" data-location1="1310" data-location2="2350" href="#">Experience</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-location1="2150"data-location2="3250" href="#">Testimonial</a>
+                <a class="nav-link" data-location1="2100"data-location2="3250" href="#">Testimonial</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-location1="2500"data-location2="3650" href="#">Contacts</a>
@@ -341,6 +344,9 @@
             </div> -->
             <div class="pl-3 pt-5">
              <button type="button " class="btn btn-outline-dark px-5 btn-resume animated fadeInUp"style="border-radius: 1rem;">Download resume</button>        
+            </div>
+            <div class="pl-3 pt-5">
+             <button type="button " class="btn btn-outline-dark px-5 btn-github animated fadeInUp"style="border-radius: 1rem;">Review Github</button>        
             </div>
 
           </div>
@@ -615,26 +621,27 @@
 
                <div class="col-md-6 col-sm-12 p-0 m-0"style="background-color: #e9724c">
                     <div class="contact-form">
-                         <div class="wow fadeInUp section-title" webkit-animation-delay="0.2s">
+                         <div class="animated fadeInUp section-title" webkit-animation-delay="0.2s">
                               <h1 class="color-white">Say hello..</h1>
-                              <p class="color-white">Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</p>
+                              <p class="color-white">Fill the following form to contact me</p>
                          </div>
 
                          <div id="contact-form">
-                              <form action="#template-mo" method="post">
-                                   <div class="wow fadeInUp" webkit-animation-delay="1s">
+                              
+                                   <div class="animated fadeInUp" webkit-animation-delay="1s">
                                         <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name">
                                    </div>
-                                   <div class="wow fadeInUp" webkit-animation-delay="1.2s">
+                                   <div class="animated fadeInUp" webkit-animation-delay="1.2s">
                                         <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
                                    </div>
-                                   <div class="wow fadeInUp" webkit-animation-delay="1.4s">
+                                   <div class="animated fadeInUp" webkit-animation-delay="1.4s">
                                         <textarea name="message" rows="5" class="form-control" id="message" placeholder="Write your message..."></textarea>
                                    </div>
-                                   <div class="wow fadeInUp col-md-6 col-sm-8" webkit-animation-delay="1.6s">
-                                        <button type="button" style="border-radius: 2rem;" class="btn btn-outline-dark px-5">Send</button>
+                                   <div class="animated fadeInUp col-md-6 col-sm-8" webkit-animation-delay="1.6s">
+                                        <button type="button" style="border-radius: 2rem;" class="btn-sendEmail btn btn-outline-dark px-5">Send</button>
                                    </div>
-                              </form>
+                                   <div class="result"></div>
+                              
                          </div>
 
                     </div>
@@ -646,16 +653,16 @@
 
                <div class="bg-dark col-md-3 col-sm-6">
                     <div class="contact-thumb">
-                         <div class="wow fadeInUp contact-info" webkit-animation-delay="0.6s">
+                         <div class="animated fadeInUp contact-info" webkit-animation-delay="0.6s">
                               <h3 class="color-white pt-5">Mail Me</h3>
                               <p>1109-1241 kilborn ave K1H1A5</p>
                          </div>
 
-                         <div class="wow fadeInUp contact-info" webkit-animation-delay="0.8s">
+                         <div class="animated fadeInUp contact-info" webkit-animation-delay="0.8s">
                               <h3 class="color-white pt-5">Contact.</h3>
                               <p><i class="fa fa-phone"></i> 819-328-4081</p>
                               <p><i class="fa fa-envelope-o"></i> <a href="mailto:wrh1102@gmail.com">wrh1102@gmail.com</a></p>
-                              <p><i class="fa fa-globe"></i> <a href="#">http://18.222.172.69/personalwebsite</a></p>
+                              <p><i class="fa fa-globe"></i> <a href="#">http://www.nerowei.com</a></p>
                          </div>
 
                     </div>
@@ -675,7 +682,7 @@
     <div class="row">
 
                <div class="col-md-12 col-sm-12 pt-1">
-                    <div class="wow fadeInUp footer-copyright text-center" webkit-animation-delay="1.8s">
+                    <div class="animated fadeInUp footer-copyright text-center" webkit-animation-delay="1.8s">
                          <p>Copyright &copy; 2018 Nero Wei</p>
                     </div>
                </div>
@@ -727,6 +734,34 @@
 
 
   })
+  $(".btn-github").click(function(){
+    window.open("https://github.com/exia1102");
+
+
+  })
+  $(".btn-sendEmail").click(function(){
+    var name = $("input[name='fullname']").val();
+    var mailaddress = $("input[name='email']").val();
+    var text = $("textarea[name='message']").val();
+    console.log(name);
+    var url = "./send.php?name="+ name +"&mailaddress="+ mailaddress +"&text="+ text
+    ;
+    $.get(url,function(data){
+      if(data!=""){
+        $(".result").html("<p> Thank you for contact me </p>")
+        console.log(data);
+      }
+
+
+    });
+
+
+    var name = $("input[name='fullname']").val("");
+    var mailaddress = $("input[name='email']").val("");
+    var text = $("textarea[name='message']").val("");
+
+
+  });
   
 
 
