@@ -4,6 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Ruohao Wei 卫若豪 简历 resume RuohaoWei Nerowei personal website">
+    <meta name="description" content="卫若豪个人网站 Nero Wei personal website">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
@@ -40,6 +42,9 @@
       height: 100vh;
       min-height: 30rem;
       top: 8rem;
+    }
+    .project-display{
+      height: auto;
     }
     .homePageRight{
       background-color: #f1e2d7;
@@ -281,21 +286,24 @@
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home
+                <a class="nav-link" href="#"data-location=".homePage">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-location1="700" data-location2="550" href="#">About me</a>
+                <a class="nav-link" data-location=".project-display" data-location2="550" href="#">Personal Driven project</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-location1="1310" data-location2="2350" href="#">Experience</a>
+                <a class="nav-link" data-location=".aboutMe" data-location2="550" href="#">About me</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-location1="2100"data-location2="3250" href="#">Testimonial</a>
+                <a class="nav-link" data-location="#experience" data-location2="2350" href="#">Experience</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-location1="2500"data-location2="3650" href="#">Contacts</a>
+                <a class="nav-link" data-location="#quotes"data-location2="3250" href="#">Testimonial</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-location="#contact"data-location2="3650" href="#">Contacts</a>
             </li>
 
             
@@ -337,16 +345,16 @@
           </div>
           <div class="row">
             <div class="pl-3 pt-5">
-             <button type="button " class="btn btn-outline-dark px-5 btn-homePage animated fadeInUp"style="border-radius: 1rem;">Get Started</button>        
+             <button type="button " class="btn btn-outline-dark px-5 btn-homePage animated fadeInUp"style="border-radius: 1rem;animation-delay: 1s">Get Started</button>        
             </div>
             <!-- <div class="pl-3 pt-5">
              <button type="button " class="btn btn-outline-dark px-5 btn-wordpress animated fadeInUp"style="border-radius: 1rem;">wordpress demo</button>        
             </div> -->
             <div class="pl-3 pt-5">
-             <button type="button " class="btn btn-outline-dark px-5 btn-resume animated fadeInUp"style="border-radius: 1rem;">Download resume</button>        
+             <button type="button " class="btn btn-outline-dark px-5 btn-resume animated fadeInUp"style="border-radius: 1rem;animation-delay: 1.2s">Download resume</button>        
             </div>
             <div class="pl-3 pt-5">
-             <button type="button " class="btn btn-outline-dark px-5 btn-github animated fadeInUp"style="border-radius: 1rem;">Review Github</button>        
+             <button type="button " class="btn btn-outline-dark px-5 btn-github animated fadeInUp"style="border-radius: 1rem;animation-delay: 1.4s">Review Github</button>        
             </div>
 
           </div>
@@ -358,7 +366,35 @@
   </div>
 </div>
 
-<div class="container-fluid aboutMe ">
+<div class="container-fluid px-0 project-display">
+  <!--Card-->
+  <!--Jumbotron-->
+<div class="row mb-2">
+    <div class="col-md-12">
+        <div class="card card-image" style="background-image: url('./images/FireShot Capture 6 - Nero game rating website - http___192.168.33.10_ratingwebsite_.png'); background-size: contain;background-position: center; background-repeat: no-repeat;">
+            <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+                <div class="py-5">
+
+                    <!--Content-->
+                        
+                        <h2 class="card-title pt-5 mb-5 font-bold animated fadeInUp">Personal-driven project</h2>
+                        <p class="px-5 pb-5 text-white animated fadeInUp">My personal-driven project is a game-rating website. You can rate each game and leave comment. Feel Free to try it!</p>
+                        <a class="btn peach-gradient animated fadeInUp"href=http://www.nerowei.com/ratingwebsite/><i class="fa fa-clone left"></i> View project</a>
+                    <!--Content-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Jumbotron-->
+  <!--/.Card-->
+</div>
+
+
+
+
+<div class="container-fluid aboutMe mt-2">
   <div class="row h-100">
     <div class="col-md-6 col-sm-12 h-100">
         <div class="container animated fadeInUp">
@@ -374,8 +410,8 @@
           </div>
           <div class="row pt-2">
             <div class="col-12">
-              <p style="color:#d0d0d0">As a new comer in Canada, I always force myself to learn stuff, which includes not only work skills but also culture in Canada. I am a MBA graduate from Carleton university. To better fit the labor market and the digital trend, I start to learn web developing.From studying business to computer science, I know it is pretty hard but I am going to do it.
-              After the study, I am very confident to show my ability as what you can see from this website. I am ready to make contribution! 
+              <p style="color:#d0d0d0">As a new comer in Canada, I always force myself to learn stuff, which includes not only work skills but also culture in Canada. I am a MBA graduate from Carleton university. To better fit the labor market and the digital trend, I start to focus web developing.
+              After the my three work experience as full-stack developer, I am very confident to show my ability as what you can see from this website. I am ready to make contribution! 
               </p>
             </div>
           </div>
@@ -525,8 +561,8 @@
                                    <i class="material-icons pr-2"style="font-size: 2.3rem;">computer</i>
                               </div>
                               <div class="media-body">
-                                   <h3 class="media-heading smallfont1"> In-store Sales <small>2018 Apr - 2018 Aug</small></h3>
-                                   <p class="color-white smallfont2">Introduce mobile service to customers.This is where I learn how to deliver customer service</p>
+                                   <h3 class="media-heading smallfont1"> Full-stack developer <small>2018 Feb - 2018 July</small></h3>
+                                   <p class="color-white smallfont2">Analyzed company requirements for new web platform and developing website using Wordpress and other third-party API</p>
                               </div>
                          </div>
 
@@ -566,8 +602,8 @@
                                    <i class="material-icons pr-2"style="font-size: 2.3rem;">computer</i>
                               </div>
                               <div class="media-body">
-                                   <h3 class="media-heading smallfont1">Web development training <small>2018 Feb - 2018 Aug</small></h3>
-                                   <p class="color-white smallfont2">6-month training for full-stack web development, including real project development.</p>
+                                   <h3 class="media-heading smallfont1">Master of business adminstration <small>2016 Sep - 2018 Feb</small></h3>
+                                   <p class="color-white smallfont2">Business study includes real complete stategic analysis for Neolord.co, which is a Ottawa-based IT company</p>
                               </div>
                          </div>
 
@@ -576,8 +612,8 @@
                                    <i class="material-icons pr-2"style="font-size: 2.3rem;">computer</i>
                               </div>
                               <div class="media-body">
-                                   <h3 class="media-heading smallfont1">Master of business adminstration <small>2016 Sep - 2018 Feb</small></h3>
-                                   <p class="color-white smallfont2">Business study includes real complete stategic analysis for Neolord.co, which is a Ottawa-based IT company</p>
+                                   <h3 class="media-heading smallfont1">Bachelor of project management <small>2012 Sep - 2016 Feb</small></h3>
+                                   <p class="color-white smallfont2">Studying programming skill and project management</p>
                               </div>
                          </div>
 
@@ -640,7 +676,7 @@
                                    <div class="animated fadeInUp col-md-6 col-sm-8" webkit-animation-delay="1.6s">
                                         <button type="button" style="border-radius: 2rem;" class="btn-sendEmail btn btn-outline-dark px-5">Send</button>
                                    </div>
-                                   <div class="result"></div>
+                                   <div class="result color-white"></div>
                               
                          </div>
 
@@ -699,23 +735,25 @@
   
   $(".btn-homePage").click(function(){
     // window.animate({scrollTo:0,700},500);
-    $("html,body").animate({scrollTop:700},1000);
+    $("html,body").animate({scrollTop: $(".project-display").offset().top  
+    }, 2000);
+    $(".navbar-toggler").addClass("collapsed");
+
 
   })
 
   $(".nav-link").click(function(){
     var wjb51=screen.width;
     var hjb51=screen.height;
-    var location1 = $(this).data('location1');
-    var location2 = $(this).data('location2');
-    if(document.documentElement.clientWidth >=630){
-      
-    $("html,body").animate({scrollTop:location1},1000);
-    }
-    if (document.documentElement.clientWidth<630) {
-    $("html,body").animate({scrollTop:location2},1000);
-    }
-
+    var location = $(this).data('location');
+    var height = $(location).offset().top-30;
+    console.log(height)
+    $('html, body').animate({  
+      scrollTop: height
+        }, 2000)
+    $(".navbar-toggler").addClass("collapsed");
+    $(".navbar-toggler").attr("aria-expanded",false);
+    $(".navbar-collapse").removeClass("show");
     
   })
 
@@ -725,12 +763,12 @@
 
   // })
   $(".btn-resume").click(function(){
-    window.open("./Resume.docx");
+    window.open("./Resume_Nero_Wei.pdf");
 
 
   })
   $(".btn-resume1").click(function(){
-    window.open("./Resume.docx");
+    window.open("./Resume_Nero_Wei.pdf");
 
 
   })
@@ -746,14 +784,16 @@
     console.log(name);
     var url = "./send.php?name="+ name +"&mailaddress="+ mailaddress +"&text="+ text
     ;
-    $.get(url,function(data){
+    if(name!=""&&text!=""){
+      $.get(url,function(data){
       if(data!=""){
         $(".result").html("<p> Thank you for contact me </p>")
-        console.log(data);
       }
-
-
     });
+    }else{
+      $(".result").html("<p> Please enter your name, e-mail address, and content  </p>")
+    }
+    
 
 
     var name = $("input[name='fullname']").val("");
