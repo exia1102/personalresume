@@ -27,6 +27,10 @@
       position: fixed;
       z-index: 99;
   	}
+    .project-display{
+        width: 100%;
+        margin-right: 0;
+    }
 /*    .title{
       font-size: 1.4rem;
     }*/
@@ -40,7 +44,7 @@
     }
     .homePage{
       height: 100vh;
-      min-height: 30rem;
+      min-height: 40rem;
       top: 8rem;
     }
     .project-display{
@@ -369,8 +373,8 @@
 <div class="container-fluid px-0 project-display">
   <!--Card-->
   <!--Jumbotron-->
-<div class="row mb-2">
-    <div class="col-md-12">
+<div class="row mb-2"style="width: 99.8vw">
+    <div class="col-md-12" style="padding-right: 0">
         <div class="card card-image" style="background-image: url('./images/FireShot Capture 6 - Nero game rating website - http___192.168.33.10_ratingwebsite_.png'); background-size: contain;background-position: center; background-repeat: no-repeat;">
             <div class="text-white text-center rgba-stylish-strong py-5 px-4">
                 <div class="py-5">
@@ -378,7 +382,7 @@
                     <!--Content-->
                         
                         <h2 class="card-title pt-5 mb-5 font-bold animated fadeInUp">Personal-driven project</h2>
-                        <p class="px-5 pb-5 text-white animated fadeInUp">My personal-driven project is a game-rating website. You can rate each game and leave comment. Feel Free to try it!</p>
+                        <p class="px-5 pb-5 text-white animated fadeInUp">My personal-driven project is a game-rating website. I use JS(AJAX), PHP, MySql to build this website. In this website, you can rate each game and leave comment. Feel Free to try it!</p>
                         <a class="btn peach-gradient animated fadeInUp"href=http://www.nerowei.com/ratingwebsite/><i class="fa fa-clone left"></i> View project</a>
                     <!--Content-->
 
@@ -391,7 +395,27 @@
   <!--/.Card-->
 </div>
 
+    <div class="container-fluid px-0 project-display">
+        <!--Card-->
+        <!--Jumbotron-->
+        <div class="row mb-2"style="width: 99.8vw">
+            <div class="col-md-12" style="padding-right: 0">
+                <div class="card card-image2" style="background-image: url('./images/wordpress-project.png'); background-size: contain;background-position: center; background-repeat: no-repeat;">
+                    <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+                        <div class="py-5">
 
+                            <!--Content-->
+
+                            <h2 class="card-title pt-5 mb-5 font-bold animated fadeInUp">Wordpress project</h2>
+                            <p class="px-5 pb-5 text-white animated fadeInUp">My wordpress project is a beautiful commerce website sample. Feel Free to try it!</p>
+                            <a class="btn peach-gradient animated fadeInUp"href=http://www.nerowei.com/wordpress2/><i class="fa fa-clone left"></i> View project</a>
+                            <!--Content-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 <div class="container-fluid aboutMe mt-2">
