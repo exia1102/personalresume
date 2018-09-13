@@ -417,6 +417,29 @@
             </div>
         </div>
 
+        <div class="container-fluid px-0 project-display">
+            <!--Card-->
+            <!--Jumbotron-->
+            <div class="row mb-2"style="width: 99.8vw">
+                <div class="col-md-12" style="padding-right: 0">
+                    <div class="card card-image2" style="background-image: url('./images/FireShot Capture 11 - React App - http___localhost_3000_.png'); background-size: contain;background-position: center; background-repeat: no-repeat;">
+                        <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+                            <div class="py-5">
+
+                                <!--Content-->
+
+                                <h2 class="card-title pt-5 mb-5 font-bold animated fadeInUp">React project</h2>
+                                <p class="px-5 pb-5 text-white animated fadeInUp">My react project is a front-page of blog-sharing website, including CSS animation and AJAX request. Feel Free to try it!</p>
+                                <a class="btn peach-gradient animated fadeInUp"href=http://www.nerowei.com/writearticle/><i class="fa fa-clone left"></i> View project</a>
+                                <!--Content-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
 <div class="container-fluid aboutMe mt-2">
   <div class="row h-100">
